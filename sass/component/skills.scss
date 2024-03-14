@@ -1,0 +1,40 @@
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.honeycomb {
+  color: $color-bg-body;
+  float: left;
+  margin-left: 0.3rem;
+  margin-bottom: -2.6rem;
+  &_1 {
+    width: 0;
+    border-bottom: 3rem solid $color-text-hover;
+    border-left: 5.2rem solid transparent;
+    border-right: 5.2rem solid transparent;
+  }
+  &_2 {
+    width: 10.4rem;
+    height: 5rem;
+    background-color: $color-text-hover;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  &_3 {
+    width: 0;
+    border-top: 3rem solid $color-text-hover;
+    border-left: 5.2rem solid transparent;
+    border-right: 5.2rem solid transparent;
+  }
+  &_row {
+    clear: left;
+  }
+  &_row-even {
+    margin-left: 5.6rem;
+  }
+  @include media-mobile {
+    
+  }
+}

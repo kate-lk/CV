@@ -1,0 +1,52 @@
+.education__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 3rem;
+  @include media-tablet {
+    padding-left: 0.5rem;
+  }
+}
+
+.education__img {
+  width: 9rem;
+  height: 9rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &_rs {
+    background-image: url(../../assets/png/RS.png);
+  }
+  &_bsu {
+    background-image: url(../../assets/png/bsu.png);
+  }
+  &_ncot {
+    background-image: url(../../assets/png/NTSOT_company_logo.png);
+  }
+  &_ts {
+    background-image: url(../../assets/img/tms.jpg);
+  }
+  @include media-mobile {
+    width: 7rem;
+  height: 7rem;
+  padding-right: 30px;
+  margin-right: 2rem;
+  }
+}
+
+.education__name {
+  max-width: 47rem;
+  text-align: left;
+  border-left: 4px solid $color-text-hover;
+  flex-basis: 130%;
+  padding: 5rem 16rem;
+  margin-top: 0;
+  @include media-tablet {
+    padding: 5rem 2rem;
+  }
+  @include media-mobile {
+    max-width: 30rem;
+    padding: 3rem 0rem;
+    padding-left: 2rem;
+  }
+}

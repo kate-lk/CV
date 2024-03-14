@@ -1,0 +1,22 @@
+
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+//base 
+
+@import "base/base.scss";
+
+//layout
+
+@import "layout/wrapper.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+//component
+
+@import "component/kl.scss";
+@import "component/about.scss";
+@import "component/education.scss";
+@import "component/projects.scss";
+@import "component/skills.scss";

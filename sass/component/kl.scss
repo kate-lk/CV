@@ -1,0 +1,141 @@
+.bg-wrapper {
+  background-image: url(../../assets/img/photo_2024-03-06_16-06-53.jpg);
+  background-repeat: no-repeat;
+  height: 60rem;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_down {
+    height: 25rem;
+    margin-top: 10rem;
+    // background-image: url(../../assets/img/вщцт.jpg);
+  }
+}
+
+.LK-inf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  max-height: 60rem;
+  // margin: 0 auto;
+  position: absolute;
+  top: 10rem;
+  background-color: $color-bg-body;
+  @include media-tablet {
+    width: 80%;
+  }
+  @include media-mobile {
+    display: block;
+    // height: 50rem;
+    top: 12rem;
+    padding-bottom: 26px;
+  }
+}
+
+.LK-inf__ing {
+  padding-right: 6rem;
+  @include media-tablet {
+    padding-right: 2rem;
+  }
+  @include media-tablet {
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+}
+
+.img-wrapper {
+  background-image: url(../../assets/img/LK.jpg);
+  height: 50rem;
+  width: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.LK-inf__list {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.LK-inf__list > li {
+  text-decoration: none;
+  margin: 1.5rem 0;
+}
+
+.LK-inf__list > li > a {
+  color: $color-text-dark;
+  text-decoration: none;
+}
+
+.LK-inf__ing > h2,
+.LK-inf__ing > h3 {
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: 2px;
+  line-height: normal;
+  // @include media-mobile {
+  //   margin-top: 4rem;
+  // }
+  
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: $color-text-hover;
+  margin: 0 auto;
+  width: 57.3%;
+  height: 6rem;
+  &_footer {
+    background-color: $color-bg-body;
+    margin: 0;
+    width: 100%;
+    @include media-tablet {
+      padding: 0;
+    }
+  }
+
+  @include media-tablet {
+    width: 80%;
+    padding: 0;
+  }
+}
+
+.social-list-item {
+  display: block;
+  padding: 1rem 3rem;
+  transition: all 1s ease-out;
+  cursor: pointer;
+  &:hover {
+    .social-icon {
+      fill: $color-text-accent;
+    }
+  }
+  @include media-mobile {
+    padding: 1rem;
+  }
+}
+
+.social-icon {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  fill: $color-bg-body;
+  &_footer {
+    fill: $color-text-dark;
+  }
+  @include media-tablet {
+    width: 3rem;
+    height: 3rem;
+  }
+}

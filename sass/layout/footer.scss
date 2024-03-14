@@ -1,0 +1,17 @@
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media-mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer-text__wrapper {
+  padding-right: 6rem;
+  @include media-tablet {
+    padding-right: 0;
+  }
+}

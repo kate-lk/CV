@@ -1,0 +1,34 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 2.4rem);
+    color: $color-text-dark;
+    background-color: $color-bg-body;
+    margin: 0;
+  }
+  
+  h1 {
+    @include font($size: 5rem, $weight: 300, $height: 2.4rem);
+    @include media-tablet {
+      @include font($size: 3rem, $weight: 300, $height: 2.4rem);
+    }
+  }
+  
+  h2 {
+    @include font($size: 4rem, $weight: 300, $height: 1.5rem);
+    @include media-tablet {
+      @include font($size: 3rem, $weight: 300, $height: 1.5rem);
+    }
+  }
+  
+  h3 {
+    @include font($size: 2.4rem, $weight: 500, $height: 3rem);
+    @include media-tablet {
+      @include font($size: 2rem, $weight: 500, $height: 3rem);
+    }
+  }

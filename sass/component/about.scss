@@ -1,0 +1,30 @@
+.section-name {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+
+.about__text {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  line-height: 3rem;
+  &_code {
+    text-align: left;
+    max-width: 100%;
+  }
+  &_mobile {
+    display: none;
+  }
+  @include media-mobile {
+    max-width: 100%;
+    &_code {
+      display: none;
+    }
+    &_mobile {
+      display: block;
+      text-align: left;
+      max-width: 100%;
+    }
+  }
+}

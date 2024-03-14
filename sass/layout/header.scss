@@ -1,0 +1,30 @@
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media-tablet {
+    display: none;
+  }
+  // @include media-mobile {
+  //   display: none;
+  // }
+}
+
+.navigation__item {
+  margin: 0 1.5rem;
+}
+
+.navigation__link {
+  color: $color-text-dark;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  &:hover {
+    color: $color-text-hover;
+  }
+}
